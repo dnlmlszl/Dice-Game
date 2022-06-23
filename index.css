@@ -1,0 +1,101 @@
+html, body { 
+    --color-1: #a8e6cf;
+    --color-2: #dcedc1; 
+    --color-3: #ffd3b6; 
+    --color-4: #ffaaa5; 
+    --color-5: #ff8b94;
+    --color-6: #2b283a;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    padding-top: 50px;
+    background-image: url(/images/chill.webp);
+    background-size: cover;
+    font-family: 'Odibee Sans', cursive;
+    height: 100vh;
+    color: #e9e7e7;
+    font-weight: bold;
+    text-shadow: 2px 2px #2b283a;
+    letter-spacing: 2.6px;
+}
+
+.container {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    background: rgb(162,149,149);
+    background: linear-gradient(322deg, rgba(162,149,149,0.3253676470588235) 1%, rgba(84,99,255,1) 67%, rgba(210,185,217,0.16010154061624648) 93%);
+    box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
+    padding: 50px;
+    border-radius: 1rem;
+}
+
+.players {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dice {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-6);
+    margin: 0 auto;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+button {
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 20px;
+    margin: 40px auto 0 auto;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Odibee Sans', cursive;
+    letter-spacing: 2.6px;
+}
+
+.img {
+    width: 90px;
+}
+
+#rollBtn,
+#resetBtn {
+    background-color: #2b283a;
+    color: #e9e7e7;
+    border: 4px solid #DA1212;
+    font-weight: bold;
+}
+
+#rollBtn:hover,
+#resetBtn:hover {
+    background: #e9e7e7;
+    color: #2b283a;
+}
+
+#rollBtn:active,
+#resetBtn:active {
+    background: royalblue;
+}
+
+
+
+button:focus {
+    outline: none;
+}
+
+#resetBtn {
+    display: none;
+}
+
+.active {
+    box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
+}
